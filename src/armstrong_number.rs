@@ -50,11 +50,4 @@ pub fn get_armstrong_number(max_num: i32) {
             }
         }
     }
-
-    
-    
-    
-
-
-
 }
