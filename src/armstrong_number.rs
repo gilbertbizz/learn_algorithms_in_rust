@@ -31,14 +31,10 @@ pub fn get_armstrong_number(max_num: i32) {
 
     for i in 0..max_num {
         a = i;
-
         for j in 0..max_num {
             b = j;
-
             for k in 0..max_num {  
-               
                 c = k; 
-
                 v = a*100 + b*10 + c; 
                 q = a.pow(3) + b.pow(3) + c.pow(3); // c
 
