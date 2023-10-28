@@ -7,6 +7,7 @@ mod graph;
 mod array;
 mod largest_value;
 mod binary_search;
+mod sudoku;
 
 pub use b_tree::*;
 pub use avl_tree::*;
@@ -17,3 +18,4 @@ pub use graph::*;
 pub use array::*;
 pub use largest_value::*;
 pub use binary_search::*;
+pub use sudoku::*;

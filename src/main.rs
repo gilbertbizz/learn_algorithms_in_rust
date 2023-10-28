@@ -2,13 +2,20 @@ use my_rust_basics::*;
 
 
 fn main() { 
-   let arr = &["Gilbet", "Underat"];
+     let board: [[u8; 9]; 9] = [
+            [3, 0, 6, 5, 0, 8, 4, 0, 0],
+            [5, 2, 0, 0, 0, 0, 0, 0, 0],
+            [0, 8, 7, 0, 0, 0, 0, 3, 1],
+            [0, 0, 3, 0, 1, 0, 0, 8, 0],
+            [9, 0, 0, 8, 6, 3, 0, 0, 5],
+            [0, 5, 0, 0, 9, 0, 6, 0, 0],
+            [1, 3, 0, 0, 0, 0, 2, 5, 0],
+            [0, 0, 0, 0, 0, 0, 0, 7, 4],
+            [0, 0, 5, 2, 0, 6, 3, 0, 0]
+        ];
 
-   let s = binary_search(&"Gilbet", arr);
 
-  let s = s.expect("The value is not found");
-  let v = arr[s];
-
-  println!("{v}");
+    let sudoku = Sudoku::new(board);
+    sudoku.print_board();
 }
 
